@@ -45,7 +45,6 @@
 
 #### No connectivity - error course (sad path):
 1. System delivers error
-<br>
 
 ### Use Case: Load Products Fallback (Cache)
 
@@ -60,7 +59,6 @@
 
 #### No cache course (sad path):
 1. System delivers error
-<br>
 
 ### Use Case: Save Product Items
 
@@ -76,7 +74,6 @@
 
 #### Fails to cache (sad path):
 1. System displays an error
-<br>
 
 ## Flowchart
 <img src="flowchart.png" width="700">
