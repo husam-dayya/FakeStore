@@ -28,52 +28,55 @@
 
 # Use Cases
 
-## Use Case: Load Products
+### Use Case: Load Products
 
-### Data:
+#### Data:
 - URL
 
-### Primary Course (happy path):
+#### Primary Course (happy path):
 1. Execute “Load Products” command with above data
 2. System downloads data from the URL
 3. System validates downloaded data
 4. System creates product items from valid data
 5. System delivers product items
 
-### Invalid data - error course (sad path):
+#### Invalid data - error course (sad path):
 1. System delivers error
 
-### No connectivity - error course (sad path):
+#### No connectivity - error course (sad path):
 1. System delivers error
+<br>
 
-## Use Case: Load Products Fallback (Cache)
+### Use Case: Load Products Fallback (Cache)
 
-### Data:
+#### Data:
 - Max age
 
-### Primary Course (happy path):
+#### Primary Course (happy path):
 1. Execute “Retrieve Products” command with above data
 2. System fetches products data from the cache
 3. System creates product items from cache
 4. System delivers product items
 
-### No cache course (sad path):
+#### No cache course (sad path):
 1. System delivers error
+<br>
 
-## Use Case: Save Product Items
+### Use Case: Save Product Items
 
-### Data:
+#### Data:
 - Product Items
 
-### Primary Course (happy path):
+#### Primary Course (happy path):
 1. Execute “Save Product Items” command with above data
 2. System fetches product items
 3. System timestamps the new cache
 4. System replaces old cache with the new data
 5. System delivers success message
 
-### Fails to cache (sad path):
+#### Fails to cache (sad path):
 1. System displays an error
+<br>
 
 ## Flowchart
 <img src="flowchart.png" width="700">
