@@ -69,8 +69,7 @@
 		D35BDF88296C9ADE004A315E /* FakeStore */ = {
 			isa = PBXGroup;
 			children = (
-				D396EEA7298A8CB20075B61C /* Product.swift */,
-				D396EEA9298A8D060075B61C /* ProductsLoader.swift */,
+				D396EEAB298A8D610075B61C /* Products Feature */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -80,6 +79,15 @@
 			children = (
 			);
 			path = FakeStoreTests;
+			sourceTree = "<group>";
+		};
+		D396EEAB298A8D610075B61C /* Products Feature */ = {
+			isa = PBXGroup;
+			children = (
+				D396EEA9298A8D060075B61C /* ProductsLoader.swift */,
+				D396EEA7298A8CB20075B61C /* Product.swift */,
+			);
+			path = "Products Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
