@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D35BDF8F296C9ADF004A315E /* FakeStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35BDF86296C9ADE004A315E /* FakeStore.framework */; };
+		D396EEA8298A8CB20075B61C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D396EEA7298A8CB20075B61C /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		D35BDF86296C9ADE004A315E /* FakeStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FakeStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35BDF8E296C9ADF004A315E /* FakeStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D396EEA7298A8CB20075B61C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		D35BDF88296C9ADE004A315E /* FakeStore */ = {
 			isa = PBXGroup;
 			children = (
+				D396EEA7298A8CB20075B61C /* Product.swift */,
 			);
 			path = FakeStore;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D396EEA8298A8CB20075B61C /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +394,7 @@
 		D35BDF9C296C9ADF004A315E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -409,6 +414,7 @@
 		D35BDF9D296C9ADF004A315E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
