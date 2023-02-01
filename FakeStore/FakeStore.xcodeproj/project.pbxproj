@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D307D4B1298A9EB800BDEC06 /* RemoteProductsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D307D4B0298A9EB800BDEC06 /* RemoteProductsLoaderTests.swift */; };
 		D35BDF8F296C9ADF004A315E /* FakeStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35BDF86296C9ADE004A315E /* FakeStore.framework */; };
 		D396EEA8298A8CB20075B61C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D396EEA7298A8CB20075B61C /* Product.swift */; };
 		D396EEAA298A8D060075B61C /* ProductsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D396EEA9298A8D060075B61C /* ProductsLoader.swift */; };
-		D396EEAD298A8DA10075B61C /* RemoteProductsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D396EEAC298A8DA10075B61C /* RemoteProductsLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D307D4B0298A9EB800BDEC06 /* RemoteProductsLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteProductsLoaderTests.swift; sourceTree = "<group>"; };
 		D35BDF86296C9ADE004A315E /* FakeStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FakeStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D35BDF8E296C9ADF004A315E /* FakeStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D396EEA7298A8CB20075B61C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D396EEA9298A8D060075B61C /* ProductsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsLoader.swift; sourceTree = "<group>"; };
-		D396EEAC298A8DA10075B61C /* RemoteProductsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteProductsLoaderTests.swift; path = FakeStore/RemoteProductsLoaderTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		D35BDF92296C9ADF004A315E /* FakeStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				D396EEAC298A8DA10075B61C /* RemoteProductsLoaderTests.swift */,
+				D307D4B0298A9EB800BDEC06 /* RemoteProductsLoaderTests.swift */,
 			);
 			path = FakeStoreTests;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D396EEAD298A8DA10075B61C /* RemoteProductsLoaderTests.swift in Sources */,
+				D307D4B1298A9EB800BDEC06 /* RemoteProductsLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
