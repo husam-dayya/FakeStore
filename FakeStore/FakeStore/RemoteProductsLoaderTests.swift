@@ -24,15 +24,6 @@ protocol HTTPClient {
     func get(from url: URL)
 }
 
-class HTTPClientSpy: HTTPClient {
-    
-    var requestedURL: URL?
-    
-    func get(from url: URL) {
-        requestedURL = url
-    }
-}
-
 final class RemoteProductsLoaderTests: XCTestCase {
 
     func test_init_doesNotRequestDataFromURL() {
@@ -47,9 +38,20 @@ final class RemoteProductsLoaderTests: XCTestCase {
         let client = HTTPClientSpy()
         let sut = RemoteProductsLoader(client: client)
         
-        sut.load( )
+        sut.load()
         
         XCTAssertNotNil(client.requestedURL)
+    }
+    
+    // MARK: - Helpers
+    
+    private class HTTPClientSpy: HTTPClient {
+        
+        var requestedURL: URL?
+        
+        func get(from url: URL) {
+            requestedURL = url
+        }
     }
 
 }
