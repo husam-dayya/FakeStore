@@ -29,5 +29,5 @@ public final class RemoteProductsLoader {
 }
 
 public protocol HTTPClient {
-    func get(from url: URL, completion: (Error?) -> Void)
+    func get(from url: URL, completion: @escaping (Error?) -> Void)
 }
