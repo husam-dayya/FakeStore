@@ -72,24 +72,24 @@ final class RemoteProductsLoaderTests: XCTestCase {
     }
     
     private class HTTPClientSpy: HTTPClient {
-        var messages = [(url: URL, complete: (Error?, HTTPURLResponse?) -> Void)]()
+        var messages = [(url: URL, complete: (HTTPClient.Result) -> Void)]()
         
         var requestedURLs: [URL] {
             messages.map(\.url)
         }
         
-        func get(from url: URL, completion: @escaping (Error?, HTTPURLResponse?) -> Void) {
+        func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
             messages.append((url, completion))
         }
         
-        func complete(with error: Error?, at index: Int = 0) {
-            messages[index].complete(error, nil)
+        func complete(with error: Error, at index: Int = 0) {
+            messages[index].complete(.failure(error))
         }
         
         func complete(withStatusCode code: Int, at index: Int = 0) {
             let response = HTTPURLResponse(url: messages[index].url, statusCode: code, httpVersion: nil, headerFields: nil)!
             
-            messages[index].complete(nil, response)
+            messages[index].complete(.success(response))
         }
     }
 
